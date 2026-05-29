@@ -1,4 +1,4 @@
-# pan-pawel — wiszące spójniki
+# pan-pawel — scripts
 
 Zbiór skryptów dla grafików rozwiązujących realne, powtarzalne problemy w pracy z Adobe Illustrator. Repo startuje od jednego, ale najważniejszego dla polskiego składu: walki z **wiszącymi spójnikami**.
 
