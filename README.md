@@ -1,10 +1,12 @@
-# pan-pawel — scripts
+# panpawel-scripts — skrypty do Adobe Illustrator
 
-Zbiór skryptów dla grafików rozwiązujących realne, powtarzalne problemy w pracy z Adobe Illustrator. Repo startuje od jednego, ale najważniejszego dla polskiego składu: walki z **wiszącymi spójnikami**.
+**Skrypty .jsx dla polskich grafików rozwiązujące realne problemy w Adobe Illustrator. Startujemy od najważniejszego dla polskiego składu: automatycznej walki z sierotkami (wiszącymi spójnikami).**
 
-## Problem
+Repo zawiera skrypty rozwiązujące powtarzalne, codzienne problemy w pracy z Illustratorem — z naciskiem na typografię polskiego tekstu. Każdy skrypt jest opisany, gotowy do wgrania i nie wymaga programowania.
 
-W polskiej typografii jednoliterowe spójniki i przyimki (**a, i, o, u, w, z**) nie powinny zostawać na końcu wiersza. Dotyczy to też części dwuliterowych (**we, ze, do, na, po, za, od**). To podstawowa zasada składu — i jednocześnie coś, co Illustrator olewa.
+## Problem: sierotki w Adobe Illustrator
+
+W polskiej typografii jednoliterowe spójniki i przyimki (**a, i, o, u, w, z**) nie powinny zostawać na końcu wiersza — nazywamy je **sierotkami** (albo wiszącymi spójnikami). Dotyczy to też części dwuliterowych (**we, ze, do, na, po, za, od**). To podstawowa zasada składu — i jednocześnie coś, co Adobe Illustrator olewa.
 
 Gorzej: **Illustrator nie rozpoznaje standardowego znaku non-breaking space** (U+00A0). Jeśli wklejasz tekst z InDesigna albo z Worda z poprawnie wstawionymi twardymi spacjami — Illustrator potraktuje je jak zwykłe spacje i wszystko ci się rozjedzie.
 
@@ -68,6 +70,10 @@ Po wrzuceniu **uruchom Illustratora od nowa**. Skrypt pojawi się w `File → Sc
 - **Bazowy regex:** wątek na [Adobe Community](https://community.adobe.com/t5/illustrator/select-part-of-point-text-objects-matching-a-regex-expression/td-p/8919738)
 - **Tip o adaptacji pod alfabet łaciński:** [Adobe Support Community](https://community.adobe.com/t5/illustrator-discussions/adobe-illustrator-does-not-use-standard-non-breaking-space-character-and-this-is-a-problem/m-p/13701954)
 - **Modyfikacja PL (alfabet polski + diakrytyki, konfigurowalna długość słowa):** pan-pawel
+
+## Tematy / słowa kluczowe
+
+Adobe Illustrator, illustrator scripts, jsx scripts, polska typografia, polish typography, sierotki, sierotki illustrator, wiszące spójniki, polskie sierotki, no-break, non-breaking space, polish orphans, typografia, skład tekstu, grafika dla grafików.
 
 ## Licencja
 
