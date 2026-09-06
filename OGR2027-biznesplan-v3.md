@@ -1,6 +1,6 @@
 # Polski Team w Ocean Globe Race 2027 – biznesplan v3 (poprawiony)
 
-Wersja: 3, 5 września 2026. Zastępuje `biznesplan_ogr2027_2.md`. Zmiany względem v2 są oznaczone tagiem **[zmiana]**. Pełne uzasadnienie zmian w `OGR2027-audyt-i-lista-dzialan.md`.
+Wersja: 3.1, 6 września 2026. Zastępuje `biznesplan_ogr2027_2.md`. Zmiany względem v2 są oznaczone tagiem **[zmiana]**. Pełne uzasadnienie zmian w `OGR2027-audyt-i-lista-dzialan.md`.
 
 Legenda pewności: [Pewne] – regulamin OGR / ustawa, [Prawdopodobne] – mocna inferencja, [Zgaduję] – szacunek bez źródła.
 
@@ -12,7 +12,12 @@ Legenda pewności: [Pewne] – regulamin OGR / ustawa, [Prawdopodobne] – mocna
 - **Klasa:** **[zmiana]** Adventure Class (jacht 47-55 stóp, GRP, projekt sprzed 1988, z listy zatwierdzonej, np. Swan 55). Wybór klasy Sayula (Swan 57 i większe) tylko, jeśli na rynku nie będzie odpowiedniego jachtu Adventure. Uzasadnienie: niższe wpisowe (50 tys. EUR zamiast 80 tys. EUR ze sponsorem), tańsze żagle, mniejsza minimalna załoga (6 osób).
 - **Budżet całkowity:** **[zmiana]** 9 300 000 zł (v2: 10 000 000 zł), w tym rezerwa 1 500 000 zł. Budżet minimum (plan B): 4 100 000 zł.
 - **Finansowanie:** **[zmiana]** sponsoring 6 000 000 zł (sponsor tytularny + 2-3 partnerów), pożyczka podporządkowana 2 500 000 zł (v2: 1-1,5 mln), sprzedaż jachtu po regatach ok. 900 000 zł jako źródło spłaty pożyczki, środki publiczne i miejskie 0-800 000 zł jako upside.
-- **Core team:** Paweł (pomysłodawca, prezes, załoga, media), Basia Adamek (nawigator), Filip Pietrzak (skipper, dyrektor sportowy). **[zmiana]** Dochodzą: Boat Captain (od października 2026), dyrektor operacyjny na lądzie z prokurą (od sierpnia 2027), drugi nawigator z załogi.
+- **Core team [uściślenie 6.09.2026]:**
+    - **Basia Adamek** – dyrektor projektu ds. żeglarskich i główny nawigator. Prowadzi zakup jachtu, refit, kwalifikację, załogę i relacje z OGR (doświadczenie: zakup jachtu za 1,5 mln EUR, koordynacja targów branżowych na świecie). Podczas wyścigu: nawigacja astronomiczna.
+    - **Paweł** – prezes obu spółek, w fazie przygotowań odpowiedzialny za obraz, social media, rolki i produkcję treści oraz za finansowanie i sponsorów. Podczas wyścigu: załoga na wachtach i produkcja treści z pokładu.
+    - **Filip Pietrzak** – skipper i dyrektor sportowy. Kolega Basi, deklaracja zaangażowania po spotkaniu. Do czasu podpisania umowy traktowany jako kandydat, nie jako członek zespołu.
+    - **[zmiana]** Dochodzą: Boat Captain (od października 2026), dyrektor operacyjny na lądzie z prokurą (od sierpnia 2027), drugi nawigator z załogi.
+- Paweł i Basia są małżeństwem. Koszty rodzinne (opieka nad dziećmi, przeloty, zakwaterowanie w portach) są kosztem gospodarstwa domowego, finansowanym z ich wynagrodzeń (sekcja 4).
 - **Kontrola:** Paweł zachowuje 100% udziałów w spółce będącej właścicielem jachtu oraz 100% udziałów w klubie sportowym non-profit. Sponsor kupuje usługi marketingowe od klubu.
 
 ---
@@ -99,7 +104,28 @@ Konsekwencje dla planu:
 - Paweł jest **pełnoprawnym członkiem załogi** pełniącym wachty, a media robi obok. Zapis z v2 o zakazie pomagania w prowadzeniu jachtu jest usunięty (pochodził z The Ocean Race, nie z OGR). [Prawdopodobne]
 - Model treści: z morza jeden pakiet tygodniowo (skompresowane wideo do kilku minut, zdjęcia, tekst), montowany na lądzie przez agencję. 80% produkcji powstaje w portach etapowych i na starcie/mecie.
 - Sesję Starlinka trzeba przećwiczyć na rejsie kwalifikacyjnym: kolejka treści, kompresja, lista "approved" osób, procedura deklaracji.
-- Sprzęt do rejestracji obrazu: sprawdzić w NOR, jakie kamery i nośniki są dozwolone na pokładzie poza sesją Starlinka.
+- Sprzęt do rejestracji obrazu: patrz sekcja 5a.
+
+### 5a. Technikalia relacjonowania wyścigu z pokładu [uściślenie 6.09.2026]
+
+Co wiadomo z regulaminów McIntyre Adventure (OGR i bliźniaczy GGR) oraz z praktyki OGR 2023:
+
+| Sprzęt | Status | Pewność | Uwagi |
+|---|---|---|---|
+| Kamery cyfrowe, GoPro, kamery wideo | Dozwolone, ale na wniosek do organizatora ("application only basis") | [Prawdopodobne] Zapis pochodzi z NOR GGR; OGR 2023 pokazał, że załogi kręciły cyfrowo, więc w OGR działa to samo | Lista sprzętu zgłaszana przed startem; organizator może dołożyć własne kamery, które załoga ma obowiązek zamontować i używać |
+| Drony | Dozwolone na wniosek, **bez odczytu GPS dla załogi** | [Prawdopodobne] W GGR wprost "non-GPS drones"; w FAQ OGR wzmianka, że tylko osoby autoryzowane przez organizatora mogą latać dronami z odczytem GPS | Praktycznie: dron w trybie bez pozycji lub z zaklejonym/wyłączonym wyświetlaczem pozycji, procedura odzysku nad oceanem z jachtu w ruchu to osobne ryzyko (utrata drona, MOB przy łapaniu) |
+| Laptopy, tablety, telefony | **Zaplombowane w worku do końca etapu** | [Pewne] FAQ OGR | Brak montażu na pokładzie. Z morza idą pliki surowe lub nagrane "z ręki" jako gotowe |
+| Starlink | Obowiązkowy, 1 h tygodniowo, upload wideo, zdjęć i tekstu z limitami wielkości plików w instrukcji żeglugi, zakaz pobierania | [Pewne] | Limity plików poznamy z Sailing Instructions; planować pakiet 1-3 GB tygodniowo [Zgaduję] |
+| YB3 tracker | Krótkie wiadomości tekstowe do kontroli wyścigu 24/7 | [Pewne] | Nie służy do mediów |
+| Prawa do materiałów | Organizator zachowuje prawa do materiałów cyfrowych do kilku tygodni po ceremonii końcowej, wydaje zespołowi wybrane fragmenty ("film drop") | [Prawdopodobne] Zapis GGR, OGR ma analogiczną politykę | Sponsor musi wiedzieć, że nie dostanie surówki natychmiast, tylko przez OGR |
+
+Wnioski dla modelu produkcji:
+1. **Montaż odbywa się na lądzie.** Na pokładzie: nagrywanie i selekcja "w kamerze". Ekipa lądowa (agencja lub własny montażysta) dostaje pakiet raz w tygodniu i robi z niego rolki, posty i materiał dla partnera medialnego.
+2. **Format z morza:** krótkie, samodzielne ujęcia (15-60 s) nagrywane tak, żeby nie wymagały montażu: wypowiedź do kamery, jedna scena, jeden temat. GoPro na stałych mocowaniach (maszt, rufa, kokpit) plus kamera ręczna z dobrym mikrofonem. Audio jest w tych regatach większym problemem niż obraz.
+3. **Zasilanie i nośniki:** bez laptopa nie ma zgrywania, więc karty pamięci na cały etap (40 dni) plus powerbanki lub instalacja 12 V z zaakceptowanym źródłem ładowania. Do wpisania w listę sprzętu składaną do OGR.
+4. **Dron:** traktować jako bonus, nie filar. Jedno dobre ujęcie jachtu z góry na etap wystarczy sponsorowi. Wniosek do OGR, dron bez pozycji GPS dla załogi, procedura startu i lądowania tylko przy spokojnej wodzie, zapasowy egzemplarz.
+5. **Paweł jako producent na pokładzie** ma sens tylko, jeśli druga osoba w załodze umie obsłużyć kamery, gdy on jest na wachcie. Kryterium rekrutacji jednego z amatorów.
+6. **Do sprawdzenia w NOR 2027 i w Sailing Instructions:** dokładna lista sprzętu podlegającego wnioskowi, limity plików na sesję Starlink, zasady dronów, czy organizator daje własne kamery, kto ma prawa do materiału i kiedy trafia do zespołu. To jest pytanie do maila do OGR razem z pytaniem o miejsca.
 
 ---
 
@@ -142,8 +168,8 @@ Uporządkowane wg tego, co może zatrzymać projekt, nie wg tego, co łatwo napr
 ### A. Dziury, które mogą zatrzymać projekt
 
 1. **Kolejność finansowania.** Koszty do lutego 2027 (jacht, survey, formalności, pierwsza rata wpisowego, początek refitu, żagle) to ok. 2,3-2,6 mln zł. Sponsor w tym czasie w najlepszym razie negocjuje. v2 miała 1-1,5 mln pożyczki. Luka 1-1,5 mln zł. Rozwiązanie w v3: pożyczka 2,5 mln zł. Jeśli inwestor nie da 2,5 mln: projekt nie startuje w 2027. [Prawdopodobne]
-2. **Brak wiążących umów z core teamem.** v2 opisuje Filipa i Basię jako członków zespołu, ale nie ma śladu podpisanych zobowiązań. Skipper w OGR musi ukończyć cały wyścig. [Pewne] Jeśli Filip odejdzie w marcu 2027, nie ma kampanii. Rozwiązanie: umowy z klauzulą wyłączności i karą umowną do 15.10.2026, wskazany zastępczy skipper z uprawnieniami.
-3. **Oboje rodzice na jednym jachcie przez 7 miesięcy.** Plan traktuje to jako element storytellingu. To jest jednocześnie: ryzyko osierocenia dzieci w jednym zdarzeniu, ryzyko medialne ("zostawili dzieci"), ryzyko, że jedno z rodziców zejdzie w Kapsztadzie z powodów rodzinnych i projekt traci nawigatora albo prezesa. Rozwiązanie: pełnomocnictwa opiekuńcze, testamenty, ubezpieczenie na życie obojga (poza budżetem projektu), zastępczy nawigator gotowy od etapu 1, gotowa komunikacja kryzysowa na temat rodziny. Nie ma dobrego rozwiązania, jest tylko przygotowane. [Zgaduję co do skali ryzyka medialnego]
+2. **Brak wiążącej umowy ze skipperem.** Filip jest kolegą Basi i "dużo jej zawdzięcza". Lojalność to nie umowa. Skipper w OGR musi ukończyć cały wyścig. [Pewne] Jeśli Filip odejdzie w marcu 2027 (inna oferta, kontuzja, konflikt), nie ma kampanii. Rozwiązanie: spotkanie do końca września, umowa z klauzulą wyłączności na sezon 2027/28 i karą umowną do 15.10.2026, wskazany zastępczy skipper z uprawnieniami. Relacja osobista jest powodem, żeby umowę podpisać szybciej, nie później: w konflikcie między przyjaciółmi nikt nie ma zapisów, do których może się odwołać.
+3. **Małżeństwo z dziećmi na jednym jachcie przez 7 miesięcy.** Plan traktuje to jako element storytellingu. To jest jednocześnie: ryzyko osierocenia dzieci w jednym zdarzeniu, ryzyko medialne ("zostawili dzieci"), ryzyko, że jedno z rodziców zejdzie w Kapsztadzie z powodów rodzinnych i projekt traci nawigatora albo prezesa. Rozwiązanie: pełnomocnictwa opiekuńcze, testamenty, ubezpieczenie na życie obojga (poza budżetem projektu), zastępczy nawigator gotowy od etapu 1, gotowa komunikacja kryzysowa na temat rodziny. Nie ma dobrego rozwiązania, jest tylko przygotowane. [Zgaduję co do skali ryzyka medialnego]
 4. **Uprawnienia nawigatora i skippera.** Regulamin OGR mówi o "Yacht Master Ocean" w załodze kwalifikacyjnej. [Pewne co do wzmianki, Prawdopodobne co do wymogu] Czy Basia i Filip mają RYA Yachtmaster Ocean lub uznany odpowiednik (polski kapitan jachtowy z pozytywną weryfikacją przez OGR)? Do sprawdzenia w NOR i mailem do OGR we wrześniu.
 5. **Ubezpieczenie kadłuba.** Jacht z lat 70. w wyścigu przez Ocean Południowy bez GPS. [Prawdopodobne] Część ubezpieczycieli odmówi, reszta da udział własny 10-25%. Inwestor z hipoteką na jachcie będzie wymagał polisy. Jeśli polisy nie ma, inwestor będzie chciał poręczenia osobistego Pawła. To jest osobista ekspozycja rzędu 1-2,5 mln zł, której v2 nie nazywa.
 6. **Termin zgłoszeń OGR.** Nie jest publicznie jasny. Jeśli zgłoszenia zamknięto (np. rok przed startem), pozostaje lista rezerwowa. Jedyny sposób, żeby to wiedzieć: mail do organizatora w tym tygodniu.
@@ -184,7 +210,7 @@ Uporządkowane wg tego, co może zatrzymać projekt, nie wg tego, co łatwo napr
 
 ### F. Dziury ludzkie
 
-29. **Paweł ma trzy etaty:** prezes, załogant na wachtach, producent treści. Na morzu wachty 4/8 godzin plus media plus nadzór nad spółką przez 1 h Starlinka tygodniowo. Coś z tego będzie robione źle. Rekomendacja: spółka w całości na prokurenta, media w połowie na drugą osobę w załodze z kompetencjami foto/wideo.
+29. **Przeciążenie przesuwa się na Basię.** Po uściśleniu ról Basia prowadzi zakup jachtu, refit, załogę, kwalifikację, relacje z OGR i jest jedynym nawigatorem, a do tego jest matką dzieci, które zostają w Polsce. To jest pięć ról, z których każda w kampanii OGR 2023 była osobną osobą [Zgaduję]. Jej doświadczenie zakupowe i targowe obniża ryzyko w fazie zakupu, ale nie zmniejsza liczby godzin w dobie. Rekomendacja: Boat Captain od października przejmuje refit i sprzęt w całości, drugi nawigator od stycznia, a Paweł poza mediami bierze na siebie finansowanie, sponsorów, prawo i podatki, żeby Basia nie dotykała niczego, co nie jest żeglarskie. Na morzu Paweł ma nadal wachty plus media, więc druga osoba z kompetencjami wideo w załodze pozostaje wymogiem rekrutacyjnym.
 30. **Selekcja 8 amatorów.** Konflikt w załodze to najczęstsza przyczyna rezygnacji w OGR 2023 [Zgaduję]. Proces: rozmowa, rejs próbny, ocena psychologiczna, jasna hierarchia wacht, umowa z zasadami zejścia z jachtu.
 31. **Zmiany załogi między etapami.** Czy załoga płynie cały wyścig, czy są rotacje w portach? Rotacje zwiększają koszt lotów i wymóg mil dla nowych osób, ale zmniejszają ryzyko wypalenia. Decyzja do stycznia 2027.
 
@@ -202,3 +228,5 @@ Uporządkowane wg tego, co może zatrzymać projekt, nie wg tego, co łatwo napr
 - PwC, ulga sponsoringowa a kluby sportowe: https://studio.pwc.pl/aktualnosci/rulingi/ulga-sponsoringowa-a-dzialalnosc-klubow-sportowych-wymogi-i-ograniczenia
 - EY, ulga sponsoringowa: https://www.ey.com/pl_pl/insights/tax/co-to-jest-ulga-sponsoringowa
 - Prawo.pl, ulga na sponsoring: https://www.prawo.pl/podatki/ulga-na-sponsoring-ograniczana-przez-fiskusa,521277.html
+- GGR 2026 Pre-Notice of Race (zasady kamer i dronów, wspólne dla regat McIntyre): https://goldengloberace.com/wp-content/uploads/2024/11/GGR-Pre-NOR-2026v2.pdf
+- OGR, materiały z pokładu 2023: https://oceangloberace.com/media/onboard-video/
