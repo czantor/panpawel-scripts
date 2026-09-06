@@ -1,5 +1,7 @@
 # OGR 2027 – audyt biznesplanu i lista działań
 
+> **Erratum (6.09.2026, po lekturze pełnego NOR):** wpisowe Adventure to 27 000 EUR plus opłaty za późne zgłoszenie (nie 25 000), dopłata sponsorska 27 000 EUR, kwalifikacja z min. 50% załogi (nie 70%), mile załogi 2 500 na dowolnym jachcie lub 1 500 na zgłoszonym. Aktualna wersja: `OGR2027-biznesplan-v4.md`.
+
 Stan na: 5 września 2026. Do startu regat (12 września 2027) zostało 372 dni.
 
 Legenda pewności: [Pewne] – twarde źródło (regulamin OGR, ustawa), [Prawdopodobne] – mocna inferencja, [Zgaduję] – wypełniam lukę.

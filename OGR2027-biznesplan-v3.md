@@ -1,5 +1,7 @@
 # Polski Team w Ocean Globe Race 2027 – biznesplan v3 (poprawiony)
 
+> **Nieaktualne.** Zastąpione przez `OGR2027-biznesplan-v4.md`, zweryfikowany na pełnym Notice of Race 2027. Liczby wpisowego, wymagania załogowe i model medialny w tej wersji są w części błędne.
+
 Wersja: 3.1, 6 września 2026. Zastępuje `biznesplan_ogr2027_2.md`. Zmiany względem v2 są oznaczone tagiem **[zmiana]**. Pełne uzasadnienie zmian w `OGR2027-audyt-i-lista-dzialan.md`.
 
 Legenda pewności: [Pewne] – regulamin OGR / ustawa, [Prawdopodobne] – mocna inferencja, [Zgaduję] – szacunek bez źródła.
