@@ -11,6 +11,10 @@ lightbox z Portfolio-Pilates, stopka z danymi spółki. Zmiana koloru/fontu = zm
 
 Demo bez Dysku (dane przykładowe): otwórz `index.html?demo=1`.
 
+**Asystent (Claude Code):** otwórz Claude Code w tym folderze i napisz „Opublikuj materiały dla X, folder: <link>”.
+Instrukcja asystenta: `CLAUDE.md`; setup na nowym komputerze: `SETUP.md`; narzędzie: `narzedzia/klient.py`
+(`check` folderu, `add`/`remove` wpisu w `config.js`, `link`, `expired`); szablon maila: `szablony/mail-do-klienta.md`.
+
 ## Jak to działa
 
 ```
@@ -74,7 +78,14 @@ Sekcja „Pytania” znika, gdy `contact.name` jest puste.
 
 ### 5. Nowe zlecenie (za każdym razem, 2 minuty)
 
-Dopisz wpis w `config.js`:
+Najprościej skryptem, który sprawdza folder i pilnuje składni:
+
+```bash
+python3 narzedzia/klient.py add pgb-2026-06 --name "Polska PGB" --folder "<link do folderu>" \
+  --date "12 czerwca 2026" --place "Warszawa" --days 90
+```
+
+Skrypt dopisuje do `config.js` taki blok (można też ręcznie):
 
 ```js
 "pgb-2026-06": {
