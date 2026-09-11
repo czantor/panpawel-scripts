@@ -72,12 +72,6 @@
   .hero .wrap{position:relative}
   .hero .lead{max-width:62ch;margin-top:26px}
   .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:60px;border-radius:3px;overflow:hidden}
-  .stat{background:var(--bg);padding:22px 20px}
-  .stat b{font-family:var(--serif);font-size:27px;font-weight:600;color:var(--amber);display:block;line-height:1.08;font-variant-numeric:tabular-nums}
-  .stat span{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:9px;display:block}
-  @media(max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:520px){.stats{grid-template-columns:1fr}}
   .clientlogo{margin-top:34px;display:inline-flex;align-items:center;gap:18px;padding:14px 18px;border:1px solid var(--line);border-radius:3px;background:var(--bg2)}
   .clientlogo img{max-height:56px;width:auto;max-width:220px;object-fit:contain}
   .clientlogo span{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
@@ -203,7 +197,6 @@
         <a class="btn btn-ghost" id="btn-drive" href="#" target="_blank" rel="noopener">Otwórz folder na Dysku Google</a>
       </div>
       <div class="clientlogo" id="clientbox" hidden><img id="client-logo" alt=""><span>Realizacja dla</span></div>
-      <div class="stats" id="stats" hidden></div>
     </div>
   </section>
 
@@ -389,16 +382,6 @@
       c.innerHTML = `<div class="wrap"><div class="state"><span class="eyebrow">Jeszcze chwila</span><h2>Folder jest na razie pusty.</h2><p>Materiały pojawią się tutaj, gdy tylko je opublikujemy. Damy znać mailem.</p></div></div>`;
       return;
     }
-    const all = sections.flatMap(s => s.files);
-    const nPhotos = all.filter(f => f.mimeType.startsWith("image/")).length;
-    const nVideos = all.filter(f => f.mimeType.startsWith("video/")).length;
-    const bytes = all.reduce((n,f)=>n+(+f.size||0),0);
-    const st = [];
-    if (nPhotos) st.push(`<div class="stat"><b>${nPhotos}</b><span>${plural(nPhotos,"zdjęcie","zdjęcia","zdjęć")}</span></div>`);
-    if (nVideos) st.push(`<div class="stat"><b>${nVideos}</b><span>${plural(nVideos,"film","filmy","filmów")}</span></div>`);
-    st.push(`<div class="stat"><b>${fmtSize(bytes)}</b><span>łącznie do pobrania</span></div>`);
-    if (job.expires) st.push(`<div class="stat"><b>${esc(fmtDate(job.expires, true))}</b><span>materiały dostępne do</span></div>`);
-    $("stats").innerHTML = st.join(""); $("stats").hidden = false;
 
     let html = "";
     let bigFiles = false;
@@ -453,6 +436,7 @@
           <ol><li>Kliknij <b>Pobierz wszystko</b> – otworzy się folder na Dysku Google.</li>
           <li>Kliknij prawym przyciskiem na nazwę folderu u góry i wybierz <b>Pobierz</b>. Google spakuje pliki do ZIP; przy dużych zbiorach dostaniesz kilka archiwów.</li></ol>
           ${bigFiles ? `<p>Przy plikach powyżej 100 MB Google wyświetla komunikat, że nie może ich przeskanować antywirusem. Kliknij <b>„Pobierz mimo to”</b>, to normalne.</p>` : ""}
+          ${job.expires ? `<p><b>Materiały dostępne do ${esc(fmtDate(job.expires))}.</b></p>` : ""}
           ${D.daysNotice ? `<p>${esc(D.daysNotice)}</p>` : ""}
           ${D.licenseNote ? `<p>${esc(D.licenseNote)}</p>` : ""}
           ${job.note ? `<p>${esc(job.note)}</p>` : ""}
