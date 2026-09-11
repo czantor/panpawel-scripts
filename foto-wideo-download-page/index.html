@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Pobierz materiały – 300PROCENT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap">
+<style>
+  :root{
+    --yellow:#F9B205;
+    --yellow-dark:#E0A000;
+    --yellow-tint:#FFF6DC;
+    --ink:#2B2B2B;
+    --grafit:#565656;
+    --muted:#8A8782;
+    --line:#E9E5DA;
+    --sand:#F5F3EC;
+    --white:#FFFFFF;
+    --font:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --radius:6px;
+    --max:1120px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--white);color:var(--grafit);
+    font-family:var(--font);font-size:16px;line-height:1.55;
+  }
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  h1,h2,h3{color:var(--ink);margin:0;text-wrap:balance;line-height:1.15}
+  .wrap{max-width:var(--max);margin:0 auto;padding-inline:20px}
+
+  /* ── żółty pas z logo, jak w ofertach ── */
+  .topbar{background:var(--yellow);color:var(--white)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:center;padding-block:22px}
+  .topbar svg{height:44px;width:auto;fill:currentColor}
+  @media (min-width:700px){.topbar svg{height:52px}}
+
+  /* ── nagłówek zlecenia ── */
+  .hero .wrap{display:grid;gap:28px;padding-block:44px 28px;align-items:center}
+  @media (min-width:820px){.hero .wrap{grid-template-columns:1.4fr 1fr}}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow-dark);margin:0 0 12px}
+  .hero h1{font-size:clamp(28px,4.2vw,44px);font-weight:900;letter-spacing:-.01em}
+  .hero h1 span{color:var(--yellow-dark)}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin:14px 0 0;padding:0;list-style:none;font-size:15px;color:var(--muted)}
+  .meta strong{color:var(--grafit);font-weight:700}
+  .intro{max-width:60ch;margin:18px 0 0}
+  .clientbox{
+    justify-self:stretch;border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 24px;display:grid;gap:12px;align-content:center;min-height:150px;
+    background:var(--sand);
+  }
+  .clientbox .lbl{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .clientbox img{max-height:84px;width:auto;object-fit:contain}
+  .clientbox .name{font-size:24px;font-weight:900;color:var(--ink)}
+
+  /* ── pas "Pobierz wszystko" – jak belka "Oferta przygotowana dla" ── */
+  .band{background:var(--yellow);color:var(--white)}
+  .band .wrap{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between;padding-block:18px}
+  .band .txt{font-weight:700;font-size:17px}
+  .band .sub{display:block;font-weight:400;font-size:14px;opacity:.95;margin-top:2px}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;border-radius:var(--radius);
+    padding:12px 20px;font-weight:700;font-size:15px;text-decoration:none;
+    border:2px solid transparent;cursor:pointer;line-height:1.2;white-space:nowrap;
+    transition:background .15s,color .15s,border-color .15s;
+  }
+  .btn svg{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .btn-ink{background:var(--ink);color:var(--white)}
+  .btn-ink:hover{background:#000}
+  .btn-yellow{background:var(--yellow);color:var(--ink)}
+  .btn-yellow:hover{background:var(--yellow-dark)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--grafit)}
+  .btn:focus-visible,.card:focus-visible,.lb button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+  /* ── sekcje: żółty pasek tytułu jak w ofercie ── */
+  .section{padding-block:36px 8px}
+  .section-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-bottom:22px}
+  .section-head h2{
+    background:var(--yellow);color:var(--white);font-weight:700;font-size:20px;
+    padding:9px 22px;letter-spacing:.01em;
+  }
+  .section-head .count{color:var(--muted);font-size:15px}
+  .section-head .spacer{flex:1}
+  .section-head .btn{padding:9px 14px;font-size:14px}
+
+  /* siatka zdjęć */
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(2,1fr);margin:0;padding:0;list-style:none}
+  @media (min-width:600px){.grid{grid-template-columns:repeat(3,1fr)}}
+  @media (min-width:900px){.grid{grid-template-columns:repeat(4,1fr);gap:16px}}
+  .card{
+    position:relative;border:0;padding:0;background:var(--sand);border-radius:var(--radius);
+    overflow:hidden;aspect-ratio:4/3;cursor:zoom-in;text-align:left;width:100%;
+  }
+  .card img{width:100%;height:100%;object-fit:cover;transition:transform .25s}
+  .card:hover img{transform:scale(1.03)}
+  .card .cap{
+    position:absolute;inset:auto 0 0 0;padding:26px 10px 8px;font-size:12px;color:#fff;
+    background:linear-gradient(transparent,rgba(0,0,0,.55));
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .card .dl{
+    position:absolute;top:8px;right:8px;width:34px;height:34px;border-radius:50%;
+    background:rgba(255,255,255,.92);color:var(--ink);display:grid;place-items:center;
+    opacity:0;transition:opacity .15s;
+  }
+  .card:hover .dl,.card:focus-within .dl{opacity:1}
+  @media (hover:none){.card .dl{opacity:1}}
+  .card .dl svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+  /* wideo */
+  .videos{display:grid;gap:22px;margin:0;padding:0;list-style:none}
+  @media (min-width:900px){.videos{grid-template-columns:repeat(2,1fr)}}
+  .videos.single{grid-template-columns:1fr;max-width:900px}
+  .video{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--white)}
+  .video .frame{aspect-ratio:16/9;background:#111;position:relative}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .video .bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:12px 16px}
+  .video .fname{font-weight:700;color:var(--ink);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .video .fsize{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+  @media (max-width:599px){.video .fname{flex-basis:100%;white-space:normal;overflow-wrap:anywhere}}
+
+  /* inne pliki */
+  .files{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+  .files li{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;padding:12px 4px;border-bottom:1px solid var(--line)}
+  .files .fname{flex:1;min-width:200px;font-weight:700;color:var(--ink)}
+  .files .fsize{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+
+  /* uwagi / stany */
+  .notice{
+    border-left:4px solid var(--yellow);background:var(--yellow-tint);
+    padding:14px 18px;border-radius:0 var(--radius) var(--radius) 0;margin:28px 0 0;font-size:15px;
+  }
+  .notice strong{color:var(--ink)}
+  .notice ol{margin:8px 0 0;padding-left:20px}
+  .state{padding:60px 0;text-align:center;color:var(--muted)}
+  .state.error{color:#9a2f2f}
+  .state code{font-family:Menlo,Consolas,monospace;font-size:13px;background:var(--sand);padding:2px 6px;border-radius:4px;color:var(--ink)}
+  .skeleton{display:grid;gap:16px;grid-template-columns:repeat(2,1fr);padding-block:36px}
+  @media (min-width:600px){.skeleton{grid-template-columns:repeat(3,1fr)}}
+  @media (min-width:900px){.skeleton{grid-template-columns:repeat(4,1fr)}}
+  .skeleton div{aspect-ratio:4/3;border-radius:var(--radius);background:linear-gradient(90deg,var(--sand),#ECE9E0,var(--sand));background-size:200% 100%;animation:sh 1.2s infinite}
+  @keyframes sh{to{background-position:-200% 0}}
+  @media (prefers-reduced-motion:reduce){.skeleton div{animation:none}.card img{transition:none}}
+
+  /* stopka */
+  footer{margin-top:56px;border-top:1px solid var(--line)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:10px 30px;align-items:center;justify-content:space-between;padding-block:26px;font-size:14px;color:var(--muted)}
+  footer .tag{color:var(--yellow-dark);font-weight:700;font-size:15px}
+  footer a{text-decoration:none}
+  footer a:hover{text-decoration:underline}
+
+  /* lightbox */
+  .lb{position:fixed;inset:0;background:rgba(20,20,20,.94);display:none;z-index:50;flex-direction:column}
+  .lb[open]{display:flex}
+  .lb .stage{flex:1;display:grid;place-items:center;padding:16px;min-height:0}
+  .lb img{max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .lb .bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 18px;color:#ddd;font-size:14px;background:#111}
+  .lb .bar .fname{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#fff;font-weight:700}
+  .lb button{background:transparent;border:1px solid #555;color:#fff;border-radius:var(--radius);padding:8px 12px;cursor:pointer;font:inherit}
+  .lb button:hover{border-color:#fff}
+  .lb .nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.12);border:0;color:#fff;font-size:26px;cursor:pointer}
+  .lb .prev{left:12px}.lb .next{right:12px}
+  .lb .nav:hover{background:rgba(255,255,255,.28)}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="40 55 580 90" role="img" aria-label="300PROCENT"><path d="M391.9,91.4c0,24.2-2.8,27.5-31.5,27.5h-41.1v17.2h-22v-72h63.1c27.9,0,31.5,3.3,31.5,27.4ZM369.9,91.4c0-6.7-.2-9.4-9.7-9.4h-41v18.8h41c9.5,0,9.7-2.7,9.7-9.5Z"/><path d="M490.6,108.6c6,3.1,8.5,4.4,8.5,21.5v6h-21.8v-6c0-8.4-.1-11.2-9.7-11.2h-43.8v17.2h-22v-72h65.9c28.2,0,31.5,2.5,31.5,27.4s-2.6,14.3-8.5,17.2ZM477.2,91.4c0-6.1,0-9.4-9.6-9.4h-43.8v18.8h43.8c9.8,0,9.6-3.3,9.6-9.5Z"/><path d="M559.4,138c-48.2,0-50.1-2-50.1-38s2.1-38,50.1-38,49.9,2,49.9,38-1.9,38-49.9,38ZM531.3,100q0,20,28.1,20c28,0,27.9,0,27.9-19.9s.1-20.1-28-20.1-28,0-28,20Z"/><path d="M178.8,66.6c-8.5,7.4-14.9,14.5-15.6,15.3h0s-30.6,34.9-30.6,34.9c5.6,4.9,11.5,6.6,17.4,5.2,12.8-3.2,31.1-23.8,31.3-24,.1-.1,11.7-13.2,23.5-20.8,5.9-3.8,11-5.7,15.3-5.7,15.7,0,28.5,12.8,28.5,28.5s-12.8,28.5-28.5,28.5-8.1-1.4-13-4.3c-2.7,3-8,8.4-14.4,13.9-1.3,1.1-2.5,2.2-3.8,3.2,11.2,7.8,21.1,11.4,31.3,11.4,29.1,0,52.8-23.7,52.8-52.8s-23.7-52.8-52.8-52.8-22.1,4.4-34.6,13.8c-2.2,1.7-4.5,3.5-6.8,5.5Z"/><path d="M188.6,133.4c8.5-7.4,14.9-14.5,15.6-15.3h0s30.6-34.9,30.6-34.9c-5.6-4.9-11.5-6.6-17.4-5.2-12.8,3.2-31.1,23.8-31.3,24-.1.1-11.7,13.2-23.5,20.8-5.9,3.8-11,5.7-15.3,5.7-15.7,0-28.5-12.8-28.5-28.5s12.8-28.5,28.5-28.5,8.1,1.4,13,4.3c2.7-3,8-8.4,14.4-13.9,1.3-1.1,2.5-2.2,3.8-3.2-11.2-7.8-21.1-11.4-31.3-11.4-29.1,0-52.8,23.7-52.8,52.8s23.7,52.8,52.8,52.8,22.1-4.4,34.6-13.8c2.2-1.7,4.5-3.5,6.8-5.5Z"/><path d="M117.6,100c-.3-15-6.1-29.7-17.8-40.1-2-1.8-4.1-3.4-6.4-4.9-.6-.4-1.1-.7-1.7-1-.2,0-.3-.2-.5-.3-.4-.2-.8-.5-1.2-.7-.2-.1-.4-.2-.6-.3-.4-.2-.8-.4-1.2-.6-.2,0-.4-.2-.6-.3-.4-.2-.8-.4-1.3-.5-.2,0-.4-.2-.6-.2-.4-.2-.9-.3-1.3-.5-.2,0-.4-.1-.6-.2-.5-.2-1-.3-1.4-.4-.2,0-.4-.1-.6-.2-.5-.1-1-.3-1.6-.4-.2,0-.3,0-.5-.1-.6-.1-1.2-.3-1.8-.4-.1,0-.2,0-.4,0-.7-.1-1.4-.3-2.2-.4,0,0,0,0,0,0-2.3-.3-4.7-.6-7.2-.7-.2,0-.4,0-.6,0-.4,0-.8,0-1.2,0,0,0,0,0,0,0-.2,0-.5,0-.7,0-.3,0-.5,0-.8,0-.6,0-1.2,0-1.8,0-.3,0-.6,0-1,0-.3,0-.6,0-1,0,0,0,0,0,0,0-6,.4-11.9,1.9-17.5,4.4-2.4,1.1-4.8,2.4-7.1,3.8-.6.4-1.1.7-1.6,1.1-.2.1-.3.2-.5.4-.4.3-.8.6-1.1.9-.2.1-.3.3-.5.4-.4.3-.7.6-1,.9-.2.1-.3.3-.5.5-.3.3-.7.6-1,.9-.2.2-.3.3-.5.5-.3.3-.7.7-1,1-.1.2-.3.3-.4.5-.3.4-.7.7-1,1.1-.1.1-.3.3-.4.4-.3.4-.7.8-1,1.3-.1.1-.2.3-.3.4-.4.5-.7,1-1.1,1.5,0,.1-.1.2-.2.3-.4.6-.8,1.2-1.2,1.8,0,0,0,0,0,0-1.3,1.9-2.5,4-3.6,6.3,0,.2-.2.3-.2.5-.3.6-.6,1.2-.8,1.7-.1.2-.2.5-.3.7-.2.5-.5,1.1-.7,1.6-.1.3-.3.6-.4.9-.1.3-.2.6-.4.9,1.6.2,3.3.4,4.9.6,8.4,1.2,15.7,2.9,19.6,3.9.4-.7.7-1.4,1.1-2,0,0,0,0,0,0,.3-.6.7-1.2,1.1-1.7,0-.2.2-.3.3-.4.3-.4.6-.8.8-1.2.1-.2.3-.3.4-.5.3-.3.5-.7.8-1,.1-.2.3-.3.4-.5.3-.3.5-.6.8-.8.1-.1.3-.3.4-.4.3-.3.6-.5.8-.7.1-.1.3-.2.4-.3.4-.3.8-.6,1.3-.9.4-.3.8-.5,1.3-.8,12.9-7.4,29.1-3.6,37.5,8.7h0c-.5,1.7-1.6,3.1-3.1,4.2-1.6,1.2-3.8,2.1-6.7,2.7-2.9.7-6.7,1-11.4,1v15.2c5.6,0,9.9.3,13.1,1,3.1.7,5.5,1.7,7,2.9.9.7,1.6,1.8,2.1,2.9,0,.2-.2.3-.3.5,0,0,0,0,0,0,0,0,0,0,0,0-8.2,12.8-25.1,16.8-38.2,9.3-.4-.2-.8-.5-1.3-.8-.4-.3-.8-.6-1.3-.9-.1-.1-.3-.2-.4-.3-.3-.2-.6-.5-.8-.7-.1-.1-.3-.3-.4-.4-.3-.3-.5-.5-.8-.8-.1-.2-.3-.3-.4-.5-.3-.3-.5-.6-.8-1-.1-.2-.3-.3-.4-.5-.3-.4-.6-.8-.8-1.2-.1-.2-.2-.3-.3-.4-.4-.5-.7-1.1-1.1-1.7,0,0,0,0,0,0-.4-.6-.7-1.3-1.1-2-3.9,1-11.3,2.7-19.6,3.9-1.7.2-3.3.4-4.9.6.1.3.2.6.4.9.1.3.3.6.4.9.2.5.5,1.1.7,1.6.1.2.2.5.3.7.3.6.6,1.2.8,1.7,0,.2.2.3.2.5,1.1,2.3,2.4,4.4,3.6,6.3,0,0,0,0,0,0,.4.6.8,1.2,1.2,1.8,0,.1.1.2.2.3.4.5.7,1,1.1,1.5.1.1.2.3.3.4.3.4.7.9,1,1.3.1.2.3.3.4.4.3.4.7.8,1,1.1.1.2.3.3.4.5.3.3.7.7,1,1,.2.2.3.3.5.5.3.3.7.6,1,.9.2.2.3.3.5.5.3.3.7.6,1,.9.2.1.3.3.5.4.4.3.8.6,1.1.9.2.1.3.2.5.4.5.4,1.1.8,1.6,1.1,2.3,1.5,4.7,2.7,7.1,3.8,5.7,2.5,11.6,4,17.5,4.4,0,0,0,0,0,0,.3,0,.6,0,1,0,.3,0,.7,0,1,0,.6,0,1.2,0,1.8,0,.3,0,.6,0,.8,0,.2,0,.5,0,.7,0,0,0,0,0,0,0,.4,0,.8,0,1.2,0,.2,0,.4,0,.6,0,2.5-.1,4.9-.3,7.2-.7,0,0,0,0,0,0,.7-.1,1.4-.2,2.2-.4.1,0,.2,0,.4,0,.6-.1,1.2-.2,1.8-.4.2,0,.3,0,.5-.1.5-.1,1.1-.3,1.6-.4.2,0,.4-.1.6-.2.5-.1,1-.3,1.4-.4.2,0,.4-.1.6-.2.5-.2.9-.3,1.3-.5.2,0,.4-.2.6-.2.4-.2.8-.3,1.3-.5.2,0,.4-.2.6-.3.4-.2.8-.4,1.2-.6.2,0,.4-.2.6-.3.4-.2.8-.4,1.2-.7.2,0,.3-.2.5-.3.6-.3,1.1-.7,1.7-1,2.3-1.5,4.4-3.1,6.4-4.9,5.9-5.2,11.7-14.1,14.5-21.1,1.7-4.5,3.5-10,3.3-18.9Z"/></svg>
+  </div>
+</header>
+
+<main id="app">
+  <section class="hero"><div class="wrap">
+    <div>
+      <p class="eyebrow">Materiały do pobrania</p>
+      <h1 id="h-title">Ładuję materiały…</h1>
+      <ul class="meta" id="h-meta"></ul>
+      <p class="intro" id="h-intro"></p>
+    </div>
+    <div class="clientbox" id="clientbox" hidden>
+      <span class="lbl">Realizacja dla</span>
+      <img id="client-logo" alt="" hidden>
+      <span class="name" id="client-name"></span>
+    </div>
+  </div></section>
+
+  <div class="band" id="band" hidden><div class="wrap">
+    <div class="txt">Pobierz cały komplet<span class="sub" id="band-sub">Google spakuje wszystkie pliki do archiwum ZIP.</span></div>
+    <a class="btn btn-ink" id="btn-all" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v3h16v-3"/></svg>
+      Pobierz wszystko
+    </a>
+  </div></div>
+
+  <div class="wrap" id="content">
+    <div class="skeleton" id="skeleton"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <span class="tag" id="f-tag"></span>
+  <span id="f-contact"></span>
+</div></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+  <div class="stage" id="lb-stage">
+    <img id="lb-img" alt="">
+    <button class="nav prev" id="lb-prev" aria-label="Poprzednie">‹</button>
+    <button class="nav next" id="lb-next" aria-label="Następne">›</button>
+  </div>
+  <div class="bar">
+    <span class="fname" id="lb-name"></span>
+    <span id="lb-size"></span>
+    <a class="btn btn-yellow" id="lb-dl" download rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v3h16v-3"/></svg>
+      Pobierz oryginał
+    </a>
+    <button id="lb-close">Zamknij (Esc)</button>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script>
+(function(){
+  "use strict";
+  const CFG = window.POBIERZ_CONFIG || {};
+  const q = new URLSearchParams(location.search);
+  const $ = id => document.getElementById(id);
+
+  /* ── konfiguracja zlecenia: ?k=slug (z config.js) lub ?folder=ID&name=… ── */
+  let job = null;
+  const demo = q.get("demo") === "1";
+  if (q.get("k") && CFG.clients && CFG.clients[q.get("k")]) job = Object.assign({}, CFG.clients[q.get("k")]);
+  else if (q.get("folder")) job = { folderId: q.get("folder"), name: q.get("name") || "", title: q.get("title") || "" };
+  else if (demo) job = { name:"Odetchnij Retreat", title:"Sesja foto i wideo", date:"12–14 czerwca 2026", place:"Jasienica", folderId:"DEMO", expires:"2026-12-31" };
+
+  const D = CFG.defaults || {};
+  const A = CFG.agency || {};
+
+  /* ── stopka ── */
+  $("f-tag").textContent = A.tagline || "";
+  const contact = [];
+  if (A.site) contact.push(`<a href="${esc(A.site)}" target="_blank" rel="noopener">${esc(A.siteLabel || A.site)}</a>`);
+  if (A.email) contact.push(`<a href="mailto:${esc(A.email)}">${esc(A.email)}</a>`);
+  if (A.phone) contact.push(esc(A.phone));
+  $("f-contact").innerHTML = contact.join(" · ");
+
+  if (!job) {
+    $("h-title").textContent = "Nie znaleziono zlecenia";
+    $("h-intro").textContent = "Ten adres nie wskazuje na żadne materiały. Sprawdź link, który dostałeś w wiadomości od nas.";
+    $("skeleton").remove();
+    return;
+  }
+
+  /* ── nagłówek ── */
+  const title = job.title || D.title || "Materiały z realizacji";
+  document.title = `${title} – ${job.name || A.name || ""}`.replace(/ – $/, "");
+  $("h-title").innerHTML = job.name ? `${esc(title)} <span>${esc(job.name)}</span>` : esc(title);
+  const meta = [];
+  if (job.date) meta.push(`<li><strong>Termin:</strong> ${esc(job.date)}</li>`);
+  if (job.place) meta.push(`<li><strong>Miejsce:</strong> ${esc(job.place)}</li>`);
+  if (job.expires) meta.push(`<li><strong>Dostępne do:</strong> ${esc(fmtDate(job.expires))}</li>`);
+  $("h-meta").innerHTML = meta.join("");
+  $("h-intro").textContent = job.intro || D.intro || "";
+
+  if (job.name || job.logoUrl || job.logoFileId) {
+    $("clientbox").hidden = false;
+    $("client-name").textContent = job.name || "";
+    const logo = job.logoUrl || (job.logoFileId ? thumb(job.logoFileId, 600) : "");
+    if (logo) { const im = $("client-logo"); im.src = logo; im.alt = job.name || "Logo klienta"; im.hidden = false; im.onerror = () => { im.hidden = true; }; }
+  }
+
+  /* ── wygaśnięcie ── */
+  if (job.expires && !demo) {
+    const exp = new Date(job.expires + "T23:59:59");
+    if (!isNaN(exp) && exp < new Date()) {
+      $("skeleton").remove();
+      $("content").innerHTML = `<div class="state"><h2 style="margin-bottom:10px">Ten link wygasł ${esc(fmtDate(job.expires))}</h2>Materiały zostały zarchiwizowane. Jeśli potrzebujesz ich ponownie, napisz do nas${A.email ? ` na <a href="mailto:${esc(A.email)}">${esc(A.email)}</a>` : ""}.</div>`;
+      return;
+    }
+  }
+
+  /* ── "Pobierz wszystko" ── */
+  if (job.folderId && job.folderId !== "DEMO") {
+    $("band").hidden = false;
+    $("btn-all").href = folderUrl(job.folderId);
+  } else if (demo) { $("band").hidden = false; $("btn-all").href = "#"; }
+
+  /* ── pobranie listy plików ── */
+  (demo ? Promise.resolve(demoSections()) : loadSections(job.folderId))
+    .then(render)
+    .catch(err => {
+      console.error(err);
+      $("skeleton").remove();
+      $("content").innerHTML = `<div class="state error"><h2 style="margin-bottom:10px;color:inherit">Nie udało się wczytać listy plików</h2>
+        Najczęstsze przyczyny: folder nie jest udostępniony jako „Każdy, kto ma link”, klucz API nie ma włączonego Drive API,
+        albo domena strony nie jest dopisana do ograniczeń klucza.<br><br>
+        Możesz otworzyć folder bezpośrednio: <a href="${esc(folderUrl(job.folderId))}" target="_blank" rel="noopener">Dysk Google</a><br>
+        <small>Szczegóły: <code>${esc(err.message || String(err))}</code></small></div>`;
+    });
+
+  /* ================= Drive API ================= */
+  async function listFolder(folderId) {
+    const out = []; let pageToken = "";
+    do {
+      const u = new URL("https://www.googleapis.com/drive/v3/files");
+      u.searchParams.set("q", `'${folderId}' in parents and trashed = false`);
+      u.searchParams.set("fields", "nextPageToken,files(id,name,mimeType,size,imageMediaMetadata(width,height),videoMediaMetadata(durationMillis))");
+      u.searchParams.set("pageSize", "1000");
+      u.searchParams.set("orderBy", "folder,name_natural");
+      u.searchParams.set("supportsAllDrives", "true");
+      u.searchParams.set("includeItemsFromAllDrives", "true");
+      u.searchParams.set("key", CFG.apiKey || "");
+      if (pageToken) u.searchParams.set("pageToken", pageToken);
+      const r = await fetch(u);
+      if (!r.ok) {
+        let msg = `HTTP ${r.status}`;
+        try { const j = await r.json(); msg += " – " + (j.error && j.error.message || ""); } catch(e){}
+        throw new Error(msg);
+      }
+      const j = await r.json();
+      out.push(...(j.files || []));
+      pageToken = j.nextPageToken || "";
+    } while (pageToken);
+    return out;
+  }
+
+  async function loadSections(rootId) {
+    if (!rootId) throw new Error("Brak ID folderu");
+    const root = await listFolder(rootId);
+    const subs = root.filter(f => f.mimeType === "application/vnd.google-apps.folder");
+    const rootFiles = root.filter(f => f.mimeType !== "application/vnd.google-apps.folder");
+    const sections = [];
+    // pliki luzem w folderze głównym – grupowane po typie
+    sections.push(...groupByType(rootFiles, null));
+    // podfoldery (1 poziom) – każdy jako własna sekcja
+    for (const s of subs) {
+      const files = (await listFolder(s.id)).filter(f => f.mimeType !== "application/vnd.google-apps.folder");
+      const groups = groupByType(files, s.id);
+      // jeśli podfolder ma jeden typ – nazwa sekcji z folderu; jeśli mieszany – rozbij
+      if (groups.length === 1) { groups[0].title = s.name; groups[0].folderId = s.id; }
+      else groups.forEach(g => { g.title = `${s.name} – ${g.title}`; g.folderId = s.id; });
+      sections.push(...groups);
+    }
+    return sections;
+  }
+
+  function groupByType(files, folderId) {
+    const img = files.filter(f => f.mimeType.startsWith("image/"));
+    const vid = files.filter(f => f.mimeType.startsWith("video/"));
+    const oth = files.filter(f => !f.mimeType.startsWith("image/") && !f.mimeType.startsWith("video/"));
+    const g = [];
+    if (img.length) g.push({ kind:"photos", title:"Zdjęcia", files: img, folderId });
+    if (vid.length) g.push({ kind:"videos", title:"Wideo", files: vid, folderId });
+    if (oth.length) g.push({ kind:"files",  title:"Pozostałe pliki", files: oth, folderId });
+    return g;
+  }
+
+  /* ================= render ================= */
+  let photos = [];   // płaska lista do lightboxa
+  function render(sections) {
+    $("skeleton").remove();
+    const c = $("content");
+    if (!sections.length) {
+      c.innerHTML = `<div class="state">Folder jest jeszcze pusty. Materiały pojawią się tutaj, gdy tylko je opublikujemy.</div>`;
+      return;
+    }
+    const total = sections.reduce((n,s)=>n+s.files.length,0);
+    $("band-sub").textContent = `${total} ${plural(total,"plik","pliki","plików")} · Google spakuje je do archiwum ZIP.`;
+
+    let html = "";
+    let bigFiles = false;
+    for (const s of sections) {
+      const cnt = s.files.length;
+      const folderBtn = (s.folderId && s.folderId !== job.folderId && !demo)
+        ? `<a class="btn btn-ghost" href="${esc(folderUrl(s.folderId))}" target="_blank" rel="noopener">Pobierz ten folder</a>` : "";
+      html += `<section class="section"><div class="section-head"><h2>${esc(s.title)}</h2><span class="count">${cnt} ${plural(cnt,"plik","pliki","plików")}</span><span class="spacer"></span>${folderBtn}</div>`;
+      if (s.kind === "photos") {
+        html += `<ul class="grid">`;
+        for (const f of s.files) {
+          const idx = photos.push(f) - 1;
+          if (+f.size > 100*1024*1024) bigFiles = true;
+          html += `<li><button class="card" type="button" data-idx="${idx}">
+            <img src="${esc(thumb(f.id, 600))}" alt="${esc(f.name)}" loading="lazy" decoding="async">
+            <span class="cap">${esc(f.name)}</span>
+            <span class="dl" data-dl="${esc(dlUrl(f.id))}" title="Pobierz"><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 19h14"/></svg></span>
+          </button></li>`;
+        }
+        html += `</ul>`;
+      } else if (s.kind === "videos") {
+        html += `<ul class="videos${s.files.length===1?" single":""}">`;
+        for (const f of s.files) {
+          if (+f.size > 100*1024*1024) bigFiles = true;
+          const dur = f.videoMediaMetadata && f.videoMediaMetadata.durationMillis ? ` · ${fmtDur(+f.videoMediaMetadata.durationMillis)}` : "";
+          const frame = demo
+            ? `<div class="frame" style="display:grid;place-items:center;color:#777;font-size:14px">podgląd wideo (odtwarzacz Dysku Google)</div>`
+            : `<div class="frame"><iframe src="${esc(previewUrl(f.id))}" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="${esc(f.name)}"></iframe></div>`;
+          html += `<li class="video">${frame}<div class="bar"><span class="fname">${esc(f.name)}</span><span class="fsize">${fmtSize(f.size)}${dur}</span>
+            <a class="btn btn-yellow" href="${esc(dlUrl(f.id))}" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v3h16v-3"/></svg>Pobierz</a></div></li>`;
+        }
+        html += `</ul>`;
+      } else {
+        html += `<ul class="files">`;
+        for (const f of s.files) {
+          html += `<li><span class="fname">${esc(f.name)}</span><span class="fsize">${fmtSize(f.size)}</span>
+            <a class="btn btn-ghost" href="${esc(dlUrl(f.id))}" rel="noopener">Pobierz</a></li>`;
+        }
+        html += `</ul>`;
+      }
+      html += `</section>`;
+    }
+
+    html += `<div class="notice"><strong>Jak pobrać wszystko naraz?</strong>
+      <ol><li>Kliknij <strong>Pobierz wszystko</strong> – otworzy się folder na Dysku Google.</li>
+      <li>Kliknij prawym przyciskiem na nazwę folderu (u góry) i wybierz <strong>Pobierz</strong>. Google spakuje pliki do ZIP; przy dużych zbiorach dostaniesz kilka archiwów.</li></ol>
+      ${bigFiles ? `<p style="margin:10px 0 0">Przy plikach powyżej 100 MB Google wyświetla komunikat, że nie może ich przeskanować antywirusem – kliknij <strong>„Pobierz mimo to”</strong>. To normalne.</p>` : ""}
+      ${D.daysNotice ? `<p style="margin:10px 0 0">${esc(D.daysNotice)}</p>` : ""}
+      ${job.note ? `<p style="margin:10px 0 0">${esc(job.note)}</p>` : ""}
+    </div>`;
+    c.innerHTML = html;
+
+    c.addEventListener("click", e => {
+      const dl = e.target.closest("[data-dl]");
+      if (dl) { e.stopPropagation(); window.open(dl.dataset.dl, "_blank", "noopener"); return; }
+      const card = e.target.closest(".card");
+      if (card) openLb(+card.dataset.idx);
+    });
+  }
+
+  /* ================= lightbox ================= */
+  let cur = 0;
+  const lb = $("lb");
+  function openLb(i){ cur = i; showLb(); lb.setAttribute("open",""); document.body.style.overflow="hidden"; $("lb-close").focus(); }
+  function closeLb(){ lb.removeAttribute("open"); document.body.style.overflow=""; }
+  function showLb(){
+    const f = photos[cur]; if (!f) return;
+    const im = $("lb-img"); im.src = thumb(f.id, 2000); im.alt = f.name;
+    $("lb-name").textContent = f.name;
+    $("lb-size").textContent = [fmtSize(f.size), f.imageMediaMetadata && f.imageMediaMetadata.width ? `${f.imageMediaMetadata.width}×${f.imageMediaMetadata.height} px` : ""].filter(Boolean).join(" · ");
+    $("lb-dl").href = dlUrl(f.id);
+    $("lb-prev").hidden = photos.length < 2; $("lb-next").hidden = photos.length < 2;
+  }
+  $("lb-close").onclick = closeLb;
+  $("lb-prev").onclick = () => { cur = (cur - 1 + photos.length) % photos.length; showLb(); };
+  $("lb-next").onclick = () => { cur = (cur + 1) % photos.length; showLb(); };
+  $("lb-stage").addEventListener("click", e => { if (e.target === e.currentTarget) closeLb(); });
+  document.addEventListener("keydown", e => {
+    if (!lb.hasAttribute("open")) return;
+    if (e.key === "Escape") closeLb();
+    if (e.key === "ArrowLeft") $("lb-prev").click();
+    if (e.key === "ArrowRight") $("lb-next").click();
+  });
+
+  /* ================= adresy Google Drive ================= */
+  function thumb(id, w){ return demo ? demoImg(id) : `https://drive.google.com/thumbnail?id=${encodeURIComponent(id)}&sz=w${w}`; }
+  function dlUrl(id){ return demo ? "#" : `https://drive.google.com/uc?export=download&id=${encodeURIComponent(id)}&confirm=t`; }
+  function previewUrl(id){ return `https://drive.google.com/file/d/${encodeURIComponent(id)}/preview`; }
+  function folderUrl(id){ return `https://drive.google.com/drive/folders/${encodeURIComponent(id)}`; }
+
+  /* ================= pomocnicze ================= */
+  function esc(s){ return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+  function fmtSize(b){ b = +b; if (!b) return ""; const u=["B","KB","MB","GB"]; let i=0; while (b>=1024 && i<u.length-1){ b/=1024; i++; } return `${b < 10 && i ? b.toFixed(1) : Math.round(b)} ${u[i]}`; }
+  function fmtDur(ms){ const s=Math.round(ms/1000), m=Math.floor(s/60), h=Math.floor(m/60); return h ? `${h}:${String(m%60).padStart(2,"0")}:${String(s%60).padStart(2,"0")}` : `${m}:${String(s%60).padStart(2,"0")}`; }
+  function fmtDate(iso){ const d = new Date(iso + "T12:00:00"); return isNaN(d) ? iso : d.toLocaleDateString("pl-PL", { day:"numeric", month:"long", year:"numeric" }); }
+  function plural(n,a,b,c){ n=Math.abs(n); if (n===1) return a; const r=n%10, t=n%100; return (r>=2&&r<=4&&!(t>=12&&t<=14)) ? b : c; }
+
+  /* ================= tryb demo (?demo=1) ================= */
+  function demoSections(){
+    const mk = (n, pre, mime, size) => Array.from({length:n}, (_,i) => ({ id:`${pre}${i}`, name:`${pre}-${String(i+1).padStart(3,"0")}.${mime.startsWith("video")?"mp4":"jpg"}`, mimeType:mime, size:String(size + i*137000), imageMediaMetadata:{width:6000,height:4000}, videoMediaMetadata:{durationMillis:154000} }));
+    return [
+      { kind:"photos", title:"Wybrane zdjęcia", files: mk(8, "Odetchnij-fot-BarbaraAdamek", "image/jpeg", 8564470), folderId:"d1" },
+      { kind:"videos", title:"Wideo", files: mk(2, "Odetchnij-Retreat-2026", "video/mp4", 1461000000), folderId:"d2" },
+      { kind:"files",  title:"Pozostałe pliki", files: [{ id:"z", name:"Odetchnij-2026-wszystkie-zdjecia.zip", mimeType:"application/zip", size:"2140000000" }], folderId:"d3" }
+    ];
+  }
+  function demoImg(id){
+    let h = 0; for (const ch of id) h = (h*31 + ch.charCodeAt(0)) % 360;
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="hsl(${h},28%,78%)"/><stop offset="1" stop-color="hsl(${(h+40)%360},32%,52%)"/></linearGradient></defs><rect width="600" height="450" fill="url(#g)"/><circle cx="${120+(h%300)}" cy="${150+(h%120)}" r="70" fill="rgba(255,255,255,.35)"/></svg>`;
+    return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+  }
+})();
+</script>
+</body>
+</html>

@@ -48,6 +48,10 @@ Logika skryptu (dwa tryby pracy, pętla po TextFrame, mechanizm aplikowania No B
 
 Możesz to sobie podpiąć pod skrót klawiszowy przez **Edit → Keyboard Shortcuts → Menu Commands → File → Scripts → Sierotki-PanPawel**.
 
+## Strona „Pobierz materiały” dla klientów foto/wideo
+
+Folder [`foto-wideo-download-page/`](foto-wideo-download-page/) zawiera statyczną stronę w stylistyce ofert 300PROCENT, z której klient pobiera zdjęcia i filmy trzymane na Dysku Google (Workspace). Instrukcja wdrożenia: [foto-wideo-download-page/README.md](foto-wideo-download-page/README.md). Demo: `index.html?demo=1`.
+
 ## Instalacja skryptów Illustrator
 
 ### Wariant A — na stałe (pojawi się w menu File → Scripts)
