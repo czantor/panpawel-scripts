@@ -50,7 +50,7 @@ Możesz to sobie podpiąć pod skrót klawiszowy przez **Edit → Keyboard Short
 
 ## Strona „Pobierz materiały” dla klientów foto/wideo
 
-Folder [`foto-wideo-download-page/`](foto-wideo-download-page/) zawiera statyczną stronę w stylistyce ofert 300PROCENT, z której klient pobiera zdjęcia i filmy trzymane na Dysku Google (Workspace). Instrukcja wdrożenia: [foto-wideo-download-page/README.md](foto-wideo-download-page/README.md). Demo: `index.html?demo=1`.
+Folder [`foto-wideo-download-page/`](foto-wideo-download-page/) zawiera statyczną stronę w stylistyce aktualnych ofert www 300PROCENT (ciemny szablon, amber, Fraunces/Inter), z której klient pobiera zdjęcia i filmy trzymane na Dysku Google (Workspace). Instrukcja wdrożenia: [foto-wideo-download-page/README.md](foto-wideo-download-page/README.md). Demo: `index.html?demo=1`.
 
 ## Instalacja skryptów Illustrator
 

@@ -2,7 +2,12 @@
 
 Jedna statyczna strona (HTML + JS, bez backendu), którą wysyłasz klientowi po realizacji foto/wideo.
 Pliki leżą **na Dysku Google w Waszym Workspace** – strona tylko je wyświetla (miniatury, odtwarzacz wideo)
-i daje przyciski do pobrania. Stylistyka: żółty pas z logo, żółte belki sekcji, Lato / Helvetica Neue – jak w ofertach 300PROCENT.
+i daje przyciski do pobrania.
+
+**Stylistyka** = szablon ofert www z `300PRO/oferta` (Fotografia-Eventowa, WFS-Ladier, ShadokAV): ciemne tło `#0A0A0B`,
+amber `#FFC000`, akcent `#19D3F3`, Fraunces (nagłówki, amber kursywa w `<em>`), Inter (tekst), IBM Plex Mono (eyebrow, chipy, meta),
+sticky nagłówek ze znakiem 300PROCENT, okruszki, chip, pasek statystyk, sekcje z eyebrow, siatka galerii jak w „Realizacjach”,
+lightbox z Portfolio-Pilates, stopka z danymi spółki. Zmiana koloru/fontu = zmienne w `:root` na górze `index.html`.
 
 Demo bez Dysku (dane przykładowe): otwórz `index.html?demo=1`.
 
@@ -62,15 +67,20 @@ Dowolny hosting statyczny. Najprościej:
 
 Strona ma `noindex`, więc Google jej nie zaindeksuje.
 
-### 4. Nowe zlecenie (za każdym razem, 2 minuty)
+### 4. Dane agencji i kontakt (raz)
+
+W `config.js` → `agency`: nazwa spółki, NIP, adres, www, e-mail, osoba kontaktowa (domyślnie Barbara Adamek – jak w ofertach).
+Sekcja „Pytania” znika, gdy `contact.name` jest puste.
+
+### 5. Nowe zlecenie (za każdym razem, 2 minuty)
 
 Dopisz wpis w `config.js`:
 
 ```js
 "pgb-2026-06": {
-  name: "Polska PGB",
+  name: "Polska PGB",          // nagłówek: „Zdjęcia i wideo z <em>Polska PGB</em>.”
   folderId: "1AbC…xyz",
-  title: "Sesja foto i wideo",
+  title: "",                   // opcjonalnie własny nagłówek, np. "Relacja z <em>Gali FAF 2026</em>."
   date: "12 czerwca 2026",
   place: "Warszawa",
   logoFileId: "",        // ID pliku z logo klienta na Dysku (udostępnionego) – opcjonalnie
